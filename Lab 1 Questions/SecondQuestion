@@ -1,0 +1,28 @@
+/*
+Write a Java program to create a class Employee with a parameterized constructor to initialize employee id, name, and salary.
+Display the employee details.
+*/
+
+class Employee{
+    int employeeId;
+    String employeeName;
+    double employeeSalary;
+    Employee(int id, String str, double salary){
+        employeeId = id;
+        employeeName = str;
+        employeeSalary = salary;
+    }
+
+    void display(){
+        System.out.println("Employee Id: " + employeeId);
+        System.out.println("Employee Name: " + employeeName);
+        System.out.println("Employee Salary: " + employeeSalary);
+    }
+}
+
+public class SecondQuestion {
+    public static void main(String[] args) {
+        Employee e1 = new Employee(1, "Abdullah Atif", 250000);
+        e1.display();
+    }
+}
